@@ -48,7 +48,7 @@ Now since we get a bird’s-eye view of time series analysis, we then break down
 A SARIMA model looks like ARIMA(1,1,2)(0,0,0)[12], which can be expressed in a general form ARIMA(p,d,q)(P,D,Q)[s].
 1. Stationarity term: d
 2. AR term: p
-3. MA term: q
+3. MA term: q \
 First, we need to decide the value of d in the model above by checking whether the series is stationary or non-stationary. To do so, the first step comes in our mind is first and second order differencing. Nonetheless, it’s hard and subjective to tell that at which chart does the series convert from non-stationary to stationary since many people actually determine d = 0 or 1 or 2 simply by merely inspecting the following figure.
 
 Hence, there’re easy yet precise ways to determine the value of d. Here are the snippet and what we get.
