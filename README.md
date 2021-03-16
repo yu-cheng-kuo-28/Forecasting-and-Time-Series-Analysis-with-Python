@@ -136,17 +136,17 @@ Holt-Winters outperforms SARIMA in terms of RMSE.
 
 
 ## (8) Reference
-[1] Brownlee, J. (2020). How to Decompose Time Series Data into Trend and Seasonality. Retrieved from https://bit.ly/2N9yRgi
-[2] Ryan Boch (2020). Prediction intervals exponential smoothing statsmodels. Retrieved from https://bit.ly/3rEMqmT
-[3] tutorialspoint (2019). Time Series. Retrieved from https://bit.ly/39WaDiw
-[4] QuantStats (2019). displaying statsmodels plot_acf and plot_pacf side by side in a jupyter notebook. Retrieved from https://bit.ly/3cTEfz5
-[5] Hyndman, R.J., & Athanasopoulos, G. (2018) Forecasting: principles and practice (2nd ed.). OTexts: Melbourne, Australia. Retrieved from https://otexts.com/fpp2/
-[6] Sarkar, D., Bali, R., & Sharma, T. (2018). Practical Machine Learning with Python: A problem-solver’s guide to building real-world intelligent systems. Karnataka, India: Apress.
-[7] ayhan (2018). Holt-Winters time series forecasting with statsmodels. Retrieved from https://bit.ly/3cTKP8K
-[8] cel (2015). Changing fig size with statsmodel. Retrieved from https://bit.ly/3pWB2SW
-[9] McKinney, W., Perktold, J., & Seabold, S. (2011). Time Series Analysis in Python with statsmodels. Retrieved from https://bit.ly/3utCUW1
-[10] pypi.org (Unidentified). pmdarima. Retrieved from https://bit.ly/3aQrdjk
-[11] Smith, T.G. et al. (Unidentified). pmdarima: ARIMA estimators for Python. Retrieved from https://bit.ly/2N5RgKO
-[12] Smith, T.G. et al. (Unidentified). pmdarima.datasets.load_wineind. Retrieved from https://bit.ly/2N5XZVc
-[13] Smith, T.G. et al. (Unidentified). Tips to using auto_arima. Retrieved from https://bit.ly/3cZXreE
+[1] Brownlee, J. (2020). How to Decompose Time Series Data into Trend and Seasonality. Retrieved from https://bit.ly/2N9yRgi \
+[2] Ryan Boch (2020). Prediction intervals exponential smoothing statsmodels. Retrieved from https://bit.ly/3rEMqmT \
+[3] tutorialspoint (2019). Time Series. Retrieved from https://bit.ly/39WaDiw \
+[4] QuantStats (2019). displaying statsmodels plot_acf and plot_pacf side by side in a jupyter notebook. Retrieved from https://bit.ly/3cTEfz5 \
+[5] Hyndman, R.J., & Athanasopoulos, G. (2018) Forecasting: principles and practice (2nd ed.). OTexts: Melbourne, Australia. Retrieved from https://otexts.com/fpp2/ \
+[6] Sarkar, D., Bali, R., & Sharma, T. (2018). Practical Machine Learning with Python: A problem-solver’s guide to building real-world intelligent systems. Karnataka, India: Apress. \
+[7] ayhan (2018). Holt-Winters time series forecasting with statsmodels. Retrieved from https://bit.ly/3cTKP8K \
+[8] cel (2015). Changing fig size with statsmodel. Retrieved from https://bit.ly/3pWB2SW \
+[9] McKinney, W., Perktold, J., & Seabold, S. (2011). Time Series Analysis in Python with statsmodels. Retrieved from https://bit.ly/3utCUW1 \
+[10] pypi.org (Unidentified). pmdarima. Retrieved from https://bit.ly/3aQrdjk \
+[11] Smith, T.G. et al. (Unidentified). pmdarima: ARIMA estimators for Python. Retrieved from https://bit.ly/2N5RgKO \
+[12] Smith, T.G. et al. (Unidentified). pmdarima.datasets.load_wineind. Retrieved from https://bit.ly/2N5XZVc \
+[13] Smith, T.G. et al. (Unidentified). Tips to using auto_arima. Retrieved from https://bit.ly/3cZXreE \
 [14] statsmodels (Unidentified). statsmodels v0.12.1. Retrieved from https://bit.ly/2NaDzKD
