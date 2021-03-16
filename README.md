@@ -1,8 +1,8 @@
 # Forecasting-and-Time-Series-Analysis-with-Python
 **Holt-Winters, SARIMA, auto ARIMA, ACF, PACF & differencing**
-
-- **Keywords**: Holt-Winters, Exponential smoothing, SARIMA, Auto ARIMA, Pmdarima, ACF, PACF, Differencing, Seasonal decomposition
+**Keywords**: Holt-Winters, Exponential smoothing, SARIMA, Auto ARIMA, Pmdarima, ACF, PACF, Differencing, Seasonal decomposition
 - Complete Python code with results: on Colab https://bit.ly/371pUN5 / on Kaggle https://bit.ly/2OHZPwL
+- Same article on Medium: https://medium.com/analytics-vidhya/ml22-6318a9c9dc35 \
 
 - We assume the reader is already familiar with time series theories including SARIMA & Holt-Winters; if not, check reference [3][5][7][9][13] for more details. Hence, we put emphasis primarily on how to conduct forecasting & time series analysis with Python. Let’s get started!
 - In traditional time series area (cf. cutting edge forecasting approaches like RNN, LSTM, GRU), Python is still like a teenager and R is like an adult already. Fortunately, there are some emerging Python modules like pmdarima, starting from 2017, developed by Taylor G Smith et al., help convert R’s time series code into Python code.
