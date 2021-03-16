@@ -33,6 +33,7 @@ y = pm.datasets.load_wineind()
 datetime_1 = pd.period_range('1980-01', periods=176, freq='M')
 dataset_wine = pd.DataFrame(data={'sales': y}, index=datetime_1)
 ```
+
 ![01](01.png)
 
 ## (3) Seasonal Decomposition using Moving Averages [1][6]
@@ -41,7 +42,9 @@ A time series is said to be comprised of the following three major components:
 2. Trend
 3. Residual
 In the following snippet, we utilize statsmodels to decompose the Australian total wine sales time series into its three constituents and then plot them.
+
 ![02](02.png)
+
 Now since we get a bird’s-eye view of time series analysis, we then break down the time series analysis of Australian total wine sales.
 
 
@@ -52,7 +55,9 @@ A SARIMA model looks like ARIMA(1,1,2)(0,0,0)[12], which can be expressed in a g
 3. MA term: q 
 
 First, we need to decide the value of d in the model above by checking whether the series is stationary or non-stationary. To this end, the first step comes in our mind is first and second order differencing. Nonetheless, it’s hard and subjective to tell that at which chart does the series convert from non-stationary to stationary since many people actually determine d = 0 or 1 or 2 simply by merely inspecting the following figure.
+
 ![03](03.png)
+
 Hence, there’re easy yet precise ways to determine the value of d. Here are the snippet and what we get.
 ```Py
 # Stationarity
@@ -82,7 +87,9 @@ sm.graphics.tsa.plot_acf(dataset_wine_array, lags=50, ax=ax[0])
 sm.graphics.tsa.plot_pacf(dataset_wine_array, lags=50, ax=ax[1])
 plt.show()
 ```
+
 ![04](04.png)
+
 We can determine the value of p (AR) & q (MA) by the figure above as you can see from some time series articles, but again, it’s a bit subjective. Thus, the next paragraph comes the solution — auto.arima function in the new Python module pmdarima derived from R.
 
 ## (6) SARIMA using Auto ARIMA function from pmdarima [11][13]
@@ -96,7 +103,9 @@ model = pm.auto_arima(dataset_wine_array, seasonal=True, m=12,
 model.set_params()
 model.summary()
 ```
+
 ![05](05.png)
+
 Finally, by pm.auto_arima() we get the best model ARIMA(0,1,2)(0,1,1)[12] quite effortless with p(AR)=0, d=1, q(MA)=2.
 
 
@@ -121,6 +130,7 @@ pred_SARIMA_conf_int = model_SARIMA.predict(test.shape[0], return_conf_int=True)
 lower_limits = [k[0] for k in pred_SARIMA_conf_int]
 upper_limits = [k[1] for k in pred_SARIMA_conf_int]
 ```
+
 ![06](06.png)
 ![07](07.png)
 
@@ -131,12 +141,15 @@ from statsmodels.tsa.holtwinters import ExponentialSmoothing
 model_HW = ExponentialSmoothing(train,  trend='add', seasonal='add', seasonal_periods=12, damped_trend=True).fit(optimized=True, use_boxcox=False, remove_bias=False)
 pred_HW = model_HW.predict(start=train.shape[0], end=dataset_wine_array.shape[0]-1)
 ```
+
 ![08](08.png)
+
 To date, ExponentialSmoothing doesn’t have parameter to generate 95% CI as pm.auto_arima does. [2]
 
 
 ## 7–3 Model Evaluation — RMSE, MAE, MAPE
 ![09](09.png)
+
 Holt-Winters outperforms SARIMA in terms of RMSE.
 
 
