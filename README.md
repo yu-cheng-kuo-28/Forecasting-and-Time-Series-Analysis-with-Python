@@ -24,7 +24,7 @@ pmdarima brings R’s beloved auto.arima to Python, making an even stronger case
 ## (2) A Toy Dataset: Australian Total Wine Sales
 Australian total wine sales by wine makers in bottles <= 1 liter. This time-series records monthly wine sales by Australian wine makers between Jan 1980 — Aug 1994. This dataset is found in the R forecast package. [12]
 
-```
+```Py
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
