@@ -8,13 +8,13 @@
 - In traditional time series area (cf. cutting edge forecasting approaches like RNN, LSTM, GRU), Python is still like a teenager and R is like an adult already. Fortunately, there are some emerging Python modules like pmdarima, starting from 2017, developed by Taylor G Smith et al., help convert R’s time series code into Python code.
 
 ## Outline
-(1) A New Module: pmdarima
-(2) A Toy Dataset: Australian Total Wine Sales
-(3) Seasonal Decomposition using Moving Averages
-(4) Stationarity: First and Second Order Differencing
-(5) AR and MA: ACF & PACF
-(6) SARIMA using Auto ARIMA function from pmdarima
-(7) Forecasting with SARIMA & Holt-Winters
+(1) A New Module: pmdarima \
+(2) A Toy Dataset: Australian Total Wine Sales \
+(3) Seasonal Decomposition using Moving Averages \
+(4) Stationarity: First and Second Order Differencing \
+(5) AR and MA: ACF & PACF \
+(6) SARIMA using Auto ARIMA function from pmdarima \
+(7) Forecasting with SARIMA & Holt-Winters \
 (8) Reference
 
 
