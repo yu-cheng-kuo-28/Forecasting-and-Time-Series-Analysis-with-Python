@@ -52,7 +52,7 @@ A SARIMA model looks like ARIMA(1,1,2)(0,0,0)[12], which can be expressed in a g
 First, we need to decide the value of d in the model above by checking whether the series is stationary or non-stationary. To do so, the first step comes in our mind is first and second order differencing. Nonetheless, it’s hard and subjective to tell that at which chart does the series convert from non-stationary to stationary since many people actually determine d = 0 or 1 or 2 simply by merely inspecting the following figure.
 
 Hence, there’re easy yet precise ways to determine the value of d. Here are the snippet and what we get.
-```
+```Py
 # Stationarity
 from pmdarima.arima import ndiffs as ndiffs
 # test =  (‘kpss’, ‘adf’, ‘pp’)
@@ -80,7 +80,7 @@ plt.show()
 We can determine the value of p (AR) & q (MA) by the figure above as you can see from some time series articles, but again, it’s a bit subjective. Thus, the next paragraph comes the solution — auto.arima function in the new Python module pmdarima derived from R.
 (6) SARIMA using Auto ARIMA function from pmdarima [11][13]
 
-```
+```Py
 # Fit the model
 model = pm.auto_arima(dataset_wine_array, seasonal=True, m=12, 
                       information_criterion='aic', test='kpss',
@@ -94,7 +94,7 @@ Finally, by pm.auto_arima() we get the best model ARIMA(0,1,2)(0,1,1)[12] quite 
 
 ## (7) Forecasting with SARIMA & Holt-Winters
 ### 7–1 Forecasting with SARIMA [3][11][13]
-```
+```Py
 ## SARIMA
 from pmdarima.pipeline import Pipeline
 from pmdarima.preprocessing import BoxCoxEndogTransformer
@@ -116,7 +116,7 @@ upper_limits = [k[1] for k in pred_SARIMA_conf_int]
 
 
 ## 7–2 Forecasting with Holt-Winters [3][7]
-```
+```Py
 ## Holt-Winters
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 model_HW = ExponentialSmoothing(train,  trend='add', seasonal='add', seasonal_periods=12, damped_trend=True).fit(optimized=True, use_boxcox=False, remove_bias=False)
