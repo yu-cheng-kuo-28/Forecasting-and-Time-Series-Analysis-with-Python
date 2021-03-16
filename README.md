@@ -64,6 +64,7 @@ print('PP: d =', ndiffs(dataset_wine_array, alpha=0.05, test='pp', max_d=2)) # d
 KPSS: d = 1 \
 ADF: d = 0 \
 PP: d = 0 \
+
 Then we choose KPSS's result, d=1, as KPSS is a comparably more advanced technique. However, you will know later that analysis here doesn’t really matter once we leverage the auto.arima function in the new Python module pmdarima.
 
 
@@ -82,7 +83,8 @@ plt.show()
 ```
 
 We can determine the value of p (AR) & q (MA) by the figure above as you can see from some time series articles, but again, it’s a bit subjective. Thus, the next paragraph comes the solution — auto.arima function in the new Python module pmdarima derived from R.
-(6) SARIMA using Auto ARIMA function from pmdarima [11][13]
+
+## (6) SARIMA using Auto ARIMA function from pmdarima [11][13]
 
 ```Py
 # Fit the model
