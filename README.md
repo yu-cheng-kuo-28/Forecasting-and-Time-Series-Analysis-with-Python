@@ -61,15 +61,17 @@ print('KPSS: d =', ndiffs(dataset_wine_array, alpha=0.05, test='kpss', max_d=2))
 print('ADF: d =', ndiffs(dataset_wine_array, alpha=0.05, test='adf', max_d=2)) # d = 0. Indicating stationary sequence
 print('PP: d =', ndiffs(dataset_wine_array, alpha=0.05, test='pp', max_d=2)) # d = 0. Indicating stationary sequence
 ```
-KPSS: d = 1
-ADF: d = 0
-PP: d = 0
+KPSS: d = 1 \
+ADF: d = 0 \
+PP: d = 0 \
 Then we choose KPSS's result, d=1, as KPSS is a comparably more advanced technique. However, you will know later that analysis here doesn’t really matter once we leverage the auto.arima function in the new Python module pmdarima.
 
 
 ## (5) AR and MA: ACF & PACF
 
 Having d = 1 at hand, we then move on to finding p (AR) & q (MA).
+
+```Py
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
@@ -77,6 +79,7 @@ fig, ax = plt.subplots(2,1,figsize=(22,6), sharex=False)
 sm.graphics.tsa.plot_acf(dataset_wine_array, lags=50, ax=ax[0])
 sm.graphics.tsa.plot_pacf(dataset_wine_array, lags=50, ax=ax[1])
 plt.show()
+```
 
 We can determine the value of p (AR) & q (MA) by the figure above as you can see from some time series articles, but again, it’s a bit subjective. Thus, the next paragraph comes the solution — auto.arima function in the new Python module pmdarima derived from R.
 (6) SARIMA using Auto ARIMA function from pmdarima [11][13]
