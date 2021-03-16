@@ -33,6 +33,7 @@ y = pm.datasets.load_wineind()
 datetime_1 = pd.period_range('1980-01', periods=176, freq='M')
 dataset_wine = pd.DataFrame(data={'sales': y}, index=datetime_1)
 ```
+![01](01.png)
 
 ## (3) Seasonal Decomposition using Moving Averages [1][6]
 A time series is said to be comprised of the following three major components:
