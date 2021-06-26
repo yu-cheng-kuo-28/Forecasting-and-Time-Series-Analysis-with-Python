@@ -12,7 +12,7 @@
 (1) A New Module: pmdarima \
 (2) A Toy Dataset: Australian Total Wine Sales \
 (3) Seasonal Decomposition using Moving Averages \
-(4) Stationarity: First and Second Order Differencing \
+(4) Stationarity: First and Second Order Differencings \
 (5) AR and MA: ACF & PACF \
 (6) SARIMA using Auto ARIMA function from pmdarima \
 (7) Forecasting with SARIMA & Holt-Winters \
@@ -49,13 +49,13 @@ In the following snippet, we utilize statsmodels to decompose the Australian tot
 Now since we get a bird’s-eye view of time series analysis, we then break down the time series analysis of Australian total wine sales.
 
 
-## (4) Stationarity: First and Second Order Differencing
+## (4) Stationarity: First and Second Order Differencings
 A SARIMA model looks like ARIMA(1,1,2)(0,0,0)[12], which can be expressed in a general form ARIMA(p,d,q)(P,D,Q)[s].
 1. Stationarity term: d
 2. AR term: p
 3. MA term: q 
 
-First, we need to decide the value of d in the model above by checking whether the series is stationary or non-stationary. To this end, the first step comes in our mind is first and second order differencing. Nonetheless, it’s hard and subjective to tell that at which chart does the series convert from non-stationary to stationary since many people actually determine d = 0 or 1 or 2 simply by merely inspecting the following figure.
+First, we need to decide the value of d in the model above by checking whether the series is stationary or non-stationary. To this end, the first step comes in our mind is the first and second order differencings. Nonetheless, it’s hard and subjective to tell that at which chart does the series convert from non-stationary to stationary since many people actually determine d = 0 or 1 or 2 simply by merely inspecting the following figure.
 
 ![03](03.png)
 
