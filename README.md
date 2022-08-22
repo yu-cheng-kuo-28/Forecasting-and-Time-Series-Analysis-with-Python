@@ -154,7 +154,7 @@ To date, ExponentialSmoothing doesn’t have parameter to generate 95% CI as pm.
 Holt-Winters outperforms SARIMA in terms of RMSE.
 
 
-## (8) Reference
+## (8) References
 [1] Brownlee, J. (2020). How to Decompose Time Series Data into Trend and Seasonality. Retrieved from https://bit.ly/2N9yRgi \
 [2] Ryan Boch (2020). Prediction intervals exponential smoothing statsmodels. Retrieved from https://bit.ly/3rEMqmT \
 [3] tutorialspoint (2019). Time Series. Retrieved from https://bit.ly/39WaDiw \
