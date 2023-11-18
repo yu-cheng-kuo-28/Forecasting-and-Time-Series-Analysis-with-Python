@@ -16,7 +16,7 @@
 (5) AR and MA: ACF & PACF \
 (6) SARIMA using Auto ARIMA function from pmdarima \
 (7) Forecasting with SARIMA & Holt-Winters \
-(8) Reference
+(8) References
 
 
 ## (1) A New Module: pmdarima
